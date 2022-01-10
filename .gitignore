@@ -1,3 +1,5 @@
 test
 *.md
 publish
+.DS_Store
+.DS_Store?
