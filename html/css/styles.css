@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    background-color: #EFEFEF;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+}
+
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float:left;
+    background-color: #555555;
+}
+
+.navbar li {
+    float: left;
+    list-style-type: none;
+    border-right: 1px #dddddd solid;
+}
+ .navbar a {
+     display: block;
+     padding: 8px;
+     
+     color: rgba(255, 255, 255, 0.925);
+     text-align: center;
+     text-decoration: none;
+     margin: 0px;
+ }
+
+.navbar li a:active, .navbar .current{
+    background-color: #04AA6D;
+ }
+
+
+ .content {
+     width: 60%;
+     margin: auto;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+     padding: 5px;
+     padding-top: 0px;
+     background-color: white;
+ }
+
+ h2 {
+     text-align: center;
+     font-size: 1.6em;
+     padding-top: 6px;
+ }
+
+ .footer {
+     width: 60%;
+     margin: 20px auto;
+    
+ }
+
+ .footer p {
+     display: inline;
+ }
+
+ .footer .links {
+     float: left;
+     /* border: 2px solid blue; */
+     width: 48%;
+ }
+
+ .footer .copy {
+     /* border: 2px solid blue; */
+     float: right;
+     text-align: right;
+     width: 48%;
+ }
+
+ .content p {
+     margin: 16px;
+     margin-top: 8px;
+ }
+
+ .content h3 {
+     margin: 4px;
+     padding: 4px;
+ }
+
+ .content a {
+     text-decoration: none;
+ }
