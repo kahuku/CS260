@@ -16,22 +16,22 @@ body {
 }
 
 .navbar li {
-    float: left;
-    list-style-type: none;
-    border-right: 1px #dddddd solid;
+     float: left;
+     list-style-type: none;
+     border-right: 1px #dddddd solid;
 }
  .navbar a {
      display: block;
      padding: 8px;
-     
      color: rgba(255, 255, 255, 0.925);
      text-align: center;
      text-decoration: none;
      margin: 0px;
+     font-size: 18px;
  }
 
 .navbar li a:active, .navbar .current{
-    background-color: #04AA6D;
+     background-color: #04AA6D;
  }
 
 
@@ -44,10 +44,16 @@ body {
      background-color: white;
  }
 
- h2 {
+h2 {
      text-align: center;
      font-size: 1.6em;
      padding-top: 6px;
+ }
+
+ h1 {
+     text-align: center;
+     font-size: 1.5em;
+     padding-top: 25px;
  }
 
  .footer {
@@ -85,4 +91,21 @@ body {
 
  .content a {
      text-decoration: none;
+ }
+
+ .inline-image {
+     margin: 10px;
+     /* border: 5px green solid; */
+     width:15%;
+     display: block;
+     float: right;
+ }
+
+ .inline-image img {
+     display: block;
+ }
+
+ .subcontent {
+     /* border: 2px red solid; */
+     width: 75%;
  }
