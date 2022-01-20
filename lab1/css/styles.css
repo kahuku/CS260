@@ -1,0 +1,63 @@
+.btn-outline-success-drew {
+    color: #b0c4de !important;
+    background-color: transparent;
+    background-image: none;
+    border-color: #b0c4de !important;
+}
+
+/* Box-sizing reset: //w3bits.com/?p=3225 */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* The Masonry Container */
+.masonry {
+    margin: 1.5em auto;
+    max-width: 1200px;
+    column-gap: 1.5em;
+}
+
+/* The Masonry Brick */
+.item {
+    background: #fff;
+    padding: 0.7em;
+    margin: 0 0 1.2em;
+    /* border: 1px solid blue; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.item img {
+    width: 100%;
+}
+
+/* Masonry on large screens */
+@media only screen and (min-width: 1024px) {
+    .masonry {
+        column-count: 4;
+    }
+}
+
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .masonry {
+        column-count: 3;
+    }
+}
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+    .masonry {
+        column-count: 2;
+    }
+}
+
+.center-heading {
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
