@@ -1,0 +1,165 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.navigation {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-family: 'Dongle', sans-serif;
+    font-size: 30px;
+}
+
+.nav-top {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    padding-left: 5px;
+    padding-top: 5px;
+    vertical-align: middle;
+}
+
+.nav-bot {
+    font-size: 25px;
+    display: flex;
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(161, 161, 161);
+}
+
+.left {
+    width: 80%;
+}
+
+.right{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: #222222;
+    margin: 5px;
+}
+
+.main {
+    display: flex;
+    margin-top: 25px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main-left {
+    display: flex;
+    /* border: 1px solid red; */
+    width: 40%;
+    justify-content: center;
+    margin: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    flex-direction: column;
+}
+
+.main-right {
+    display: flex;
+    /* border: 1px solid blue; */
+    width: 50%;
+    margin: 10px;
+    justify-content: flex-start;
+    font-family: 'Source Sans Pro', sans-serif;
+    flex-direction: column;
+}
+
+.main-right h2 {
+    /* text-align: center; */
+    margin: 0px;
+    margin-bottom: 6px;
+}
+
+.main-right h4{
+    margin: 0px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+}
+
+.main-right h5 {
+    margin: 0px;
+    margin-bottom: 8px;
+    margin-left: 4px;
+}
+
+.main-left h5 {
+    margin: 0px;
+    margin-bottom: 6px;
+}
+
+.main-left img {
+    width: 90%;
+    border-radius: 10px;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* border: 2px solid yellow; */
+    justify-content: space-between;
+}
+
+.tessy-pick {
+    text-align: center;
+    background-color: peachpuff;
+    border-radius: 20px;
+    text-decoration: underline dotted;
+    width: 18%;
+    font-size: 18px;
+}
+
+.remaining {
+    color: #a01c04;
+    width: 50%;
+    font-size: 16px;
+    /* border: 2px solid black; */
+    text-align: center;
+}
+
+.details-box {
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px 0 rgb(34 34 34 / 15%);
+    width: 88%;
+    margin: 0px;
+    margin-bottom: 18px;
+}
+
+.details-box p{
+    padding: 8px;
+    margin-left: 4px;
+}
+
+.cart-button {
+    width: 90%;
+    background-color: black;
+    border-radius: 30px;
+    margin: 0;
+    margin-bottom: 14px;
+}
+
+.button {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    /* border: 2px solid white; */
+    margin: 6px;
+}
+
+.main-right h3{
+    margin: 0px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
