@@ -52,10 +52,12 @@ body {
     background-color: #C5BAAF;
     z-index: 2;
     width: 100%;
-    /* border: 2px solid black; */
-    padding-top: 90px;
-    justify-content: center;
+    /* border: 2px solid red; */
+    padding-top: 120px;
+    /* justify-content: center; */
     flex-direction: column;
+    align-items: center;
+    min-height: 400px;
 }
 
 .filler h1 {
@@ -67,6 +69,7 @@ body {
 .filler p {
     display: flex;
     justify-content: center;
+    /* width: 75%; */
 }
 
 .over {
@@ -98,6 +101,10 @@ body {
     transform: translate(-50%, -50%);
     color: white;
   }
+
+.centered h1 {
+    text-align: center;
+}
 
   .converter-row {
       /* border: 2px solid white; */
@@ -169,4 +176,99 @@ body {
   .converter-button p {
       margin: 0px;
       color: white;
-  }
+    }
+
+.filler h1 {
+    text-align: center;
+}
+
+.text {
+    display: flex;
+    /* border: 2px solid white; */
+    width: 70%;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.text p {
+    text-align: center;
+}
+
+.foot {
+    display: flex;
+    /* position: relative; */
+    background-color: #424B54;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+}
+
+.foot-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.foot a {
+    /* border: 1px solid white; */
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    padding-bottom: 8px;
+    padding-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .over {
+        position: relative;
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        left: 0px;
+        flex-direction: column;
+    }
+
+    .filler {
+        padding: 0px;
+    }
+
+    .converter-row {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .converter-button-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .converter-button {
+        width: 75%;
+        margin: 10px;
+    }
+
+    .converter-item {
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+
+    .text {
+        width: 85%;
+    }
+
+    .filler {
+        padding-top: 20px;
+        max-width: fit-content - 400px;
+        min-width: none;
+    }
+
+    .foot-row {
+        flex-direction: column;
+    }
+}
