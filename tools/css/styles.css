@@ -221,6 +221,43 @@ body {
     text-align: center;
 }
 
+
+.home {
+    background-color: #EBCFB2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scroller {
+    background-color: #C5BAAF;
+    width: 80%;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 20px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.scroller h2 {
+    text-align: center;
+}
+
+.scroller p {
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: center;
+}
+
+.scroller ol, .scroller ul {
+    padding: 0px;
+    text-align: center;
+    list-style-position: inside;
+}
+
 @media only screen and (max-width: 768px) {
     .over {
         position: relative;
@@ -271,4 +308,6 @@ body {
     .foot-row {
         flex-direction: column;
     }
+
+    
 }
