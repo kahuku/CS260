@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: skyblue;
+    font-family: 'Armata', sans-serif;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+form {
+    padding: 10px;
+}
+
+#weatherInput {
+    padding: 6px;
+}
+
+#weatherSubmit {
+    padding: 10px;
+}
+
+label {
+    display: block;
+    padding: 10px;
+}
+
+#results{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    /* border: 2px solid red; */
+}
+
+#weatherResults {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    /* border: 2px white solid; */
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#forecastResults {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    /* border: 2px white solid; */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+}
+
+#links a {
+    text-decoration: none;
+    color: #333333;
+}
+
+#links a:hover {
+    color: white;
+}
+
+#copy {
+    margin-bottom: 10px;
+}
+
+#copy p {
+    text-decoration: none;
+    color: #333333;
+}
+
+@media only screen and (min-width: 768px){
+    #weatherResults {
+        width: 50%;
+    }
+
+    #forecastResults {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #forecastDay {
+        /* border: 2px solid red; */
+        width: 25%;
+        margin: 10px;
+    }
+}
