@@ -50,37 +50,107 @@
           </div>
         </div>
         <div class="over">
-          <div class="converter-row">
-            <div class="converter-item">
-              <h3>Amount</h3>
-              <div class="entry-box">
-                <p>1.00</p>
+          <form>
+            <div class="converter-row">
+              <div class="converter-item">
+                <h3>Amount</h3>
+                <div class="entry-box">
+                  <input id="inputQuantityBox" placeholder="1.00">
+                </div>
+              </div>
+              <div class="converter-item">
+                <h3>From</h3>
+                <div class="entry-box">
+                  <select id="base">
+                    <option value="USD">USD</option>
+                    <option value="AMZN">Amazon Stock</option>
+                    <option value="AOA">Angolan Kwanza</option>
+                    <option value="AAPL">Apple Stock</option>
+                    <option value="AUD">Australian Dollar</option>
+                    <option value="basic-attention-token">BAT</option>
+                    <option value="bitcoin">Bitcoin</option>
+                    <option value="BRL">Brazilian Real</option>
+                    <option value="CAD">Canadian Dollar</option>
+                    <option value="dogecoin">Dogecoin</option>
+                    <option value="ethereum">Ethereum</option>
+                    <option value="EUR">Euro</option>
+                    <option value="MER">Gas to Meridian</option>
+                    <option value="SLC">Gas to Salt Lake City</option>
+                    <option value="CBV">Gas to V South</option>
+                    <option value="GHS">Ghanian Cedi</option>
+                    <option value="HKD">Hong Kong Dollar</option>
+                    <option value="CSRL">Hour in the CSRL</option>
+                    <option value="ILS">Israeli New Shekel</option>
+                    <option value="INR">Indian Rupee</option>
+                    <option value="DBL">In n Out Double Double</option>
+                    <option value="JPY">Japanese Yen</option>
+                    <option value="litecoin">Litecoin</option>
+                    <option value="MCD">McDonald's Stock</option>
+                    <option value="MXN">Mexican Peso</option>
+                    <option value="NZD">New Zealand Dollar</option>
+                    <option value="TWD">New Taiwan Dollar</option>
+                    <option value="PLUG">Plug Power Stock</option>
+                    <option value="CNE">Raising Cane's Meal</option>
+                    <option value="BBB">Rancheritos Bacon Breakfast Burrito</option>
+                    <option value="SPY">SPY Stock</option>
+                    <option value="stellar">Stellar Lumen</option>
+                    <option value="TSLA">Tesla Stock</option>
+                  </select>
+                </div>
+              </div>
+              <div class="converter-item">
+                <h3>To</h3>
+                <div class="entry-box">
+                  <select id="target">
+                    <option value="USD">USD</option>
+                    <option value="AMZN">Amazon Stock</option>
+                    <option value="AOA">Angolan Kwanza</option>
+                    <option value="AAPL">Apple Stock</option>
+                    <option value="AUD">Australian Dollar</option>
+                    <option value="basic-attention-token">BAT</option>
+                    <option value="bitcoin">Bitcoin</option>
+                    <option value="BRL">Brazilian Real</option>
+                    <option value="CAD">Canadian Dollar</option>
+                    <option value="dogecoin">Dogecoin</option>
+                    <option value="ethereum">Ethereum</option>
+                    <option value="EUR">Euro</option>
+                    <option value="MER">Gas to Meridian</option>
+                    <option value="SLC">Gas to Salt Lake City</option>
+                    <option value="CBV">Gas to V South</option>
+                    <option value="GHS">Ghanian Cedi</option>
+                    <option value="HKD">Hong Kong Dollar</option>
+                    <option value="CSRL">Hour in the CSRL</option>
+                    <option value="ILS">Israeli New Shekel</option>
+                    <option value="INR">Indian Rupee</option>
+                    <option value="DBL">In n Out Double Double</option>
+                    <option value="JPY">Japanese Yen</option>
+                    <option value="litecoin">Litecoin</option>
+                    <option value="MCD">McDonald's Stock</option>
+                    <option value="MXN">Mexican Peso</option>
+                    <option value="NZD">New Zealand Dollar</option>
+                    <option value="TWD">New Taiwan Dollar</option>
+                    <option value="PLUG">Plug Power Stock</option>
+                    <option value="CNE">Raising Cane's Meal</option>
+                    <option value="BBB">Rancheritos Bacon Breakfast Burrito</option>
+                    <option value="SPY">SPY Stock</option>
+                    <option value="stellar">Stellar Lumen</option>
+                    <option value="TSLA">Tesla Stock</option>
+                  </select>
+                </div>
               </div>
             </div>
-            <div class="converter-item">
-              <h3>From</h3>
-              <div class="entry-box">
-                <p>USD -- US Dollar</p>
+            <div class="converter-button-container">
+              <div class="converter-button">
+                <button id="Swap">Swap</button>
+              </div>
+              <div class="converter-button">
+                <button id="Convert">Convert</button>
               </div>
             </div>
-            <div class="converter-item">
-              <h3>To</h3>
-              <div class="entry-box">
-                <p>EUR -- Euro</p>
-              </div>
+            <div class="converter-output">
+              <h5 id="output"></h5>
             </div>
-          </div>
-          <div class="converter-button-container">
-            <div class="converter-button">
-              <p>Swap</p>
-            </div>
-            <div class="converter-button">
-              <p>Convert</p>
-            </div>
-          </div>
-          <div class="converter-output">
-            <h5>1.00 US Dollar = 0.89650307 Euros</h5>
-          </div>
+          </form>
         </div>
         <div class="filler">
           <h1>About the "Currency" Converter</h1>
@@ -105,6 +175,8 @@
         </div>
       </div>
       
+
+    <script src="/js/time-currency.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
